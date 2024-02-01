@@ -1,4 +1,4 @@
-# Lab 2 -- It is a POWER Ball!
+# Lab 2 -- It's the POWER BALL!
 
 **50 points**			
 
@@ -15,13 +15,21 @@ This assignment will give you a chance to practice the following:
 ## Problem: 
 You are hired to work for a lottery company. Your task is to write a Java program for the Quick Play function from the lottery vending machine.
 
-Your program needs to prompt the player for their name and generate 10 random lottery tickets for the.
+Your program needs to prompt the player for their name and generate 10 random lottery tickets for them.
+
+_**Update:**_ Your program should also prompt the player for how much they want to play.
 
 Each lottery ticket consists of 6 numbers ranging from 0 to 99. After printing out the tickets, your program should print out a "good luck" message with the player's **first name** and their potential winning prize.
 
 Many users may enter blank spaces before and after the name, make sure your program handles it gracefully.
 
-The prize money is already stored in the **prize** variable. You should use the **DecimalFormat** class to format the output properly.
+_**Update:**_ The Lotto Winning Numbers are :  3, 5, 16, 58, 59, 11.  (Got them from [https://www.lotteryusa.com/])
+
+Everytime any of the lotto numbers match any of the winning numbers, let the money the user is playing be raised to the power of 1.75 (Hint, it's an exponent).
+
+This amount now becomes the prize money. 
+
+The prize money should be stored in the **prize** variable. You should use the **DecimalFormat** class to format the output properly.
 
 ## Output:
 
@@ -29,8 +37,13 @@ The output of your program should look like this:
 
 ```
 This program generates 10 lottery tickets.
-What is your name?     Steve Jobs   
-Here are the ticket:
+What is your name?     Steve
+How much do you want to play?     18.45
+
+Great! Steve wants to play $18.45.
+
+Here are the tickets:
+-----------------
 24 14 62 05 04 11
 30 02 23 11 00 09
 37 02 63 41 33 24
@@ -43,8 +56,9 @@ Here are the ticket:
 25 41 13 35 19 04
 -----------------
 Good luck Steve!
-Estimated Jackpot:
-$225,938,745
+-----------------
+Your Winnings are :
+$18,567,478.98
 -----------------
 ```
 
